@@ -1,17 +1,39 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class UI : MonoBehaviour
+public class PanelManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject MainMenuPanel; 
+    public GameObject SettingsPanel;
+    public GameObject CreditsPanel;
+
+    public void Start()
     {
-        Debug.Log("do thing");
+        MainMenuPanel = GameObject.Find("MainMenuPanel");
+        SettingsPanel = GameObject.Find("SettingsPanel");
+        CreditsPanel = GameObject.Find("CreditsPanel");
+        MainMenuPanel.SetActive(true);
+        SettingsPanel.SetActive(false);
+        CreditsPanel.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ShowMainMenu()
     {
-        
+        MainMenuPanel.SetActive(true);
+        SettingsPanel.SetActive(false);
+        CreditsPanel.SetActive(false);
+    }
+
+    public void ShowSettings()
+    {
+        MainMenuPanel.SetActive(false);
+        SettingsPanel.SetActive(true);
+        CreditsPanel.SetActive(false);
+    }
+
+    public void ShowCredits()
+    {
+        MainMenuPanel.SetActive(false);
+        SettingsPanel.SetActive(false);
+        CreditsPanel.SetActive(true);
     }
 }
