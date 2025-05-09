@@ -5,14 +5,9 @@ using Yarn.Unity;
 public class Character1Script : MonoBehaviour, IPointerClickHandler
 {
     public DialogueRunner runDialogue;
-    // Vector2 CharacterPosition = transform.position;
-    // Vector2 intPosition = 0;
-    //  public void Start()
-    // {
-    //      GameObject character1 = GameObject.Find("Character1");
+    private RoundsScript roundsScript;
 
-    // }
-    // public Camera m_OrthographicCamera = GameObject.Find("Main Camera");
+
     public void OnPointerClick(PointerEventData eventData)
     {
         GameObject character1 = GameObject.Find("Character1");
@@ -54,6 +49,9 @@ public class Character1Script : MonoBehaviour, IPointerClickHandler
         // transform.position.x = transform.position.x + 1;
         // transform.position = new Vector3(1.0f, 1.0f, 1.0f);
         runDialogue.StartDialogue(this.gameObject.name);
+
+        roundsScript.roundCounter++;
+    }
     }
     void Character1Interrogation (){
         GameObject character1 = GameObject.Find("Character1");
