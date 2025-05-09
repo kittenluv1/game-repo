@@ -5,17 +5,22 @@ using Yarn.Unity;
 public class Character1Script : MonoBehaviour, IPointerClickHandler
 {
     public DialogueRunner runDialogue;
-    public void OnPointerClick(PointerEventData eventData)
+    private RoundsScript roundsScript;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        roundsScript = FindFirstObjectByType<RoundsScript>();
+    }
+
+        public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log("Character1");
         // this.gameObject.SetActive(false);
         // transform.position = new Vector3(-0.03, 0.69, 0);
         runDialogue.StartDialogue(this.gameObject.name);
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+
+        roundsScript.roundCounter++;
     }
 
     // // Update is called once per frame
