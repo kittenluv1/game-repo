@@ -8,13 +8,15 @@ public class Character1Script : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log("Character1");
-        runDialogue.StartDialogue("Character1");
+        // this.gameObject.SetActive(false);
+        // transform.position = new Vector3(-0.03, 0.69, 0);
+        runDialogue.StartDialogue(this.gameObject.name);
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    // void Start()
-    // {
+    void Start()
+    {
         
-    // }
+    }
 
     // // Update is called once per frame
     // void Update()
