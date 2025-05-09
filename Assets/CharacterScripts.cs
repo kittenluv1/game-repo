@@ -52,13 +52,13 @@ public class Character1Script : MonoBehaviour, IPointerClickHandler
 
         roundsScript.roundCounter++;
     }
-    }
-    void Character1Interrogation (){
-        GameObject character1 = GameObject.Find("Character1");
+    
+    // void Character1Interrogation (){
+    //     GameObject character1 = GameObject.Find("Character1");
 
-        character1.SetActive(false);
+    //     character1.SetActive(false);
 
-    }
+    // }
     // void Character2Interrogation (){
 
     // }
