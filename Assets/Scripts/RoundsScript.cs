@@ -39,12 +39,13 @@ public class RoundsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        roundCounterUI.text = "Round: " + roundCounter.ToString();
+        
     }
 
     void onDialogueCompleteListener()
     {
         Debug.Log("Dialogue complete");
         roundCounter++;
+        roundCounterUI.text = "Round: " + roundCounter.ToString();
     }
 }
