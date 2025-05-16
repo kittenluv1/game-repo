@@ -76,13 +76,23 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void SetMusicVolume(float volume)
+    public void SetMusicVolume(float value)
     {
-        musicSource.volume = Mathf.Clamp01(volume);
+        musicSource.volume = Mathf.Clamp01(value);
     }
 
-    public void SetSFXVolume(float volume)
+    public void SetSFXVolume(float value)
     {
-        sfxSource.volume = Mathf.Clamp01(volume);
+        sfxSource.volume = Mathf.Clamp01(value);
+    }
+
+    public void SetMusicVolumeFromSlider(float value)
+    {
+        SetMusicVolume(value);
+    }
+
+    public void SetSFXVolumeFromSlider(float value)
+    {
+        SetSFXVolume(value);
     }
 }
