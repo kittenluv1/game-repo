@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PanelManager : MonoBehaviour
 {
@@ -21,6 +22,11 @@ public class PanelManager : MonoBehaviour
         MainMenuPanel.SetActive(true);
         SettingsPanel.SetActive(false);
         CreditsPanel.SetActive(false);
+    }
+
+    public void playGame()
+    {
+        SceneManager.LoadSceneAsync("CutScene");
     }
 
     public void ShowSettings()
