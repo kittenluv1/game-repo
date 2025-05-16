@@ -24,9 +24,14 @@ public class PanelManager : MonoBehaviour
         CreditsPanel.SetActive(false);
     }
 
-    public void playGame()
+    public void PlayGame()
     {
         SceneManager.LoadSceneAsync("CutScene");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     public void ShowSettings()
