@@ -24,7 +24,7 @@ public class PanelManager : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("TestCase");
+        SceneManager.LoadSceneAsync("Dialogue");
     }
 
     public void QuitGame()
