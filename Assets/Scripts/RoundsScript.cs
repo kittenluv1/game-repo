@@ -11,6 +11,9 @@ public class RoundsScript : MonoBehaviour
     public VideoPlayer videoPlayer; 
     public RawImage rawImage;
     public int roundCounter = 1;
+    public ToggleGroup suspectList;
+    [SerializeField]
+    private GameObject currentSuspect;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Awake()
@@ -20,10 +23,9 @@ public class RoundsScript : MonoBehaviour
 
     void Start()
     {
-        // // cutscene
+        // cutscene
         videoPlayer.loopPointReached += (VideoPlayer vp) =>
         {
-            Debug.Log("video ended");
             videoPlayer.Stop();
             rawImage.gameObject.SetActive(false);
         };
@@ -34,6 +36,9 @@ public class RoundsScript : MonoBehaviour
             videoPlayer.Play();
         };
         videoPlayer.Prepare();
+
+        // update toggle values
+        Debug.Log(suspectList.GetType());
     }
 
     // Update is called once per frame
