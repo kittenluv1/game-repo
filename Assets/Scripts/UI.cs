@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PanelManager : MonoBehaviour
 {
-    public GameObject MainMenuPanel; 
+    public GameObject MainMenuPanel;
     public GameObject SettingsPanel;
 
     public void Start()
@@ -12,6 +12,8 @@ public class PanelManager : MonoBehaviour
         SettingsPanel = GameObject.Find("SettingsPanel");
         MainMenuPanel.SetActive(true);
         SettingsPanel.SetActive(false);
+        AudioManager.Instance.PlayMusic("Among Us Drip Theme Song Original (Among Us Trap Remix  Amogus Meme Music)");
+        AudioManager.Instance.SetMusicVolume(0.5f);
     }
 
     public void ShowMainMenu()
@@ -33,11 +35,5 @@ public class PanelManager : MonoBehaviour
     {
         MainMenuPanel.SetActive(false);
         SettingsPanel.SetActive(true);
-    }
-
-    public void ShowCredits()
-    {
-        MainMenuPanel.SetActive(false);
-        SettingsPanel.SetActive(false);
     }
 }
