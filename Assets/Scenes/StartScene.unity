@@ -1088,16 +1088,16 @@ MonoBehaviour:
   m_HandleRect: {fileID: 478419710}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 50
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1866731227}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: SetMusicVolumeFromSlider
-        m_Mode: 4
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2290,5 +2290,5 @@ SceneRoots:
   - {fileID: 319684975}
   - {fileID: 164229419}
   - {fileID: 1653321412}
-  - {fileID: 775315699}
   - {fileID: 1866731228}
+  - {fileID: 775315699}
