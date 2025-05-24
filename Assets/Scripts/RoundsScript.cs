@@ -4,14 +4,18 @@ using Yarn.Unity;
 using UnityEngine.Video;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class RoundsScript : MonoBehaviour
 {
     public TextMeshProUGUI roundCounterUI;
     public DialogueRunner dialogueRunner;
-    public VideoPlayer videoPlayer;
+    public VideoPlayer beginningCutscene;
+    public VideoPlayer endCutscene;
     public RawImage rawImage;
     public int roundCounter = 1;
+    public int numRounds = 4;
     public GameObject suspectListUI;
     public ToggleGroup suspectList;
     public Character1Script characterScripts;
@@ -31,18 +35,18 @@ public class RoundsScript : MonoBehaviour
     void Start()
     {
         // cutscene
-        videoPlayer.loopPointReached += (VideoPlayer vp) =>
+        beginningCutscene.loopPointReached += (VideoPlayer vp) =>
         {
-            videoPlayer.Stop();
+            beginningCutscene.Stop();
             rawImage.gameObject.SetActive(false);
         };
-        videoPlayer.prepareCompleted += (VideoPlayer vp) =>
+        beginningCutscene.prepareCompleted += (VideoPlayer vp) =>
         {
             rawImage.gameObject.SetActive(true);
-            rawImage.texture = videoPlayer.texture;
-            videoPlayer.Play();
+            rawImage.texture = beginningCutscene.texture;
+            beginningCutscene.Play();
         };
-        videoPlayer.Prepare();
+        beginningCutscene.Prepare();
 
         // update toggle values
         GameObject[] characters = characterScripts.characters.ToArray();
@@ -81,7 +85,7 @@ public class RoundsScript : MonoBehaviour
         continueButton.onClick.AddListener(() =>
         {
             roundCounter++;
-            if (roundCounter > 4)
+            if (roundCounter > numRounds)
             {
                 if (currentSuspect != null)
                 {
@@ -109,6 +113,40 @@ public class RoundsScript : MonoBehaviour
     void endGame()
     {
         Debug.Log("end game called");
+
+        // cutscene - NOT WORKING AAH
+        if (beginningCutscene.isPlaying)
+            beginningCutscene.Stop();
+        endCutscene.loopPointReached += (VideoPlayer vp) =>
+        {
+            endCutscene.Stop();
+            rawImage.gameObject.SetActive(false);
+            Scene currentScene = SceneManager.GetActiveScene();
+            SceneManager.UnloadSceneAsync(currentScene.name);
+        };
+        endCutscene.prepareCompleted += (VideoPlayer vp) =>
+        {
+            Debug.Log("preparing end cutscene");
+            rawImage.gameObject.SetActive(true);
+            rawImage.texture = endCutscene.texture;
+            Debug.Log("play end cutscene");
+            endCutscene.Play();
+        };
+        Debug.Log("Preparing to play end cutscene");
+        if (endCutscene == null)
+        {
+            Debug.LogError("endCutscene VideoPlayer is not assigned!");
+            return;
+        }
+        if (endCutscene.clip == null && string.IsNullOrEmpty(endCutscene.url))
+        {
+            Debug.LogError("endCutscene has no video clip or URL assigned!");
+            return;
+        }
+        Debug.Log("Calling endCutscene.Prepare()");
+        endCutscene.Prepare();
+
+
         if (currentSuspect == realSuspect)
         {
             Debug.Log("You chose: " + currentSuspect.name + "\nYou win!");
@@ -123,5 +161,14 @@ public class RoundsScript : MonoBehaviour
             winOrLoseText.gameObject.SetActive(true);
             winOrLoseText.enabled = true;
         }
+        
+        StartCoroutine(UnloadSceneAfterDelay(2f));
+    }
+
+    IEnumerator UnloadSceneAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        // Replace "NextSceneName" with your actual next scene name
+        SceneManager.LoadScene("StartScene");
     }
 }
