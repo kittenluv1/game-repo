@@ -23,7 +23,7 @@ public class RoundsScript : MonoBehaviour
         // // cutscene
         videoPlayer.loopPointReached += (VideoPlayer vp) =>
         {
-            Debug.Log("video ended");
+            // Debug.Log("video ended");
             videoPlayer.Stop();
             rawImage.gameObject.SetActive(false);
         };
@@ -44,7 +44,7 @@ public class RoundsScript : MonoBehaviour
 
     void onDialogueCompleteListener()
     {
-        Debug.Log("Dialogue complete");
+        // Debug.Log("Dialogue complete");
         roundCounter++;
         roundCounterUI.text = "Round: " + roundCounter.ToString();
     }
