@@ -57,7 +57,8 @@ public class Character1Script : MonoBehaviour
     public void enterDialogue(GameObject currentCharacter)
     {
         currentCharacter.transform.position = new Vector3(0, 0.69f, 0);
-        currentCharacter.transform.localScale = new Vector3(3, 3, 3);
+        currentCharacter.transform.localScale = new Vector3(2, 2, 2);
+        currentCharacter.transform.rotation = new Quaternion(0, 0, 0,0);
         main_camera.orthographicSize = 4.5f;
 
         foreach (GameObject character in characters)
