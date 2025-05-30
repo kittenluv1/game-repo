@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &17401091 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3262438603626763704, guid: 654d34cb7d8bf7a489df908b5f4f7bef, type: 3}
-  m_PrefabInstance: {fileID: 7717553568770824119}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &76190348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -499,11 +494,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293732702}
   m_CullTransparentMesh: 1
---- !u!1 &313888829 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 495317719064432362, guid: 32fb3422f75ca447383ee85fcd7309d4, type: 3}
-  m_PrefabInstance: {fileID: 76190348}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &371749811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,11 +2348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runDialogue: {fileID: 222302247}
-  characters:
-  - {fileID: 183086361}
-  - {fileID: 1015940286}
-  - {fileID: 17401091}
-  - {fileID: 313888829}
+  characters: []
   roundTracker: 000000
   main_camera: {fileID: 519420031}
 --- !u!4 &1274001356
