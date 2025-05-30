@@ -115,7 +115,7 @@ public class Character1Script : MonoBehaviour
         else if (currentCharacter == characters[3] && isCharacter4Done == true)
         {
             main_camera.orthographicSize = 5f;
-            currentCharacter.transform.localScale = new Vector3(2, 2, 2);
+            currentCharacter.transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
             currentCharacter.transform.position = new Vector3(3.94f, -0.69f, 0);
             returnCharacters();
 
@@ -175,7 +175,7 @@ public class Character1Script : MonoBehaviour
     }
 
 
-    public void Start()
+    public void Awake()
     {
         characters.Add(GameObject.Find("Character1"));
         characters.Add(GameObject.Find("Character2"));
