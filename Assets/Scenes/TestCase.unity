@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &17401091 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3262438603626763704, guid: 654d34cb7d8bf7a489df908b5f4f7bef, type: 3}
-  m_PrefabInstance: {fileID: 7717553568770824119}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &78886371
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,11 +2049,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006857955}
   m_CullTransparentMesh: 1
---- !u!1 &1015940286 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 495317719064432362, guid: 38291925d01c4be48b34bca7d2b9604e, type: 3}
-  m_PrefabInstance: {fileID: 8152614156627936431}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1091117404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,11 +2372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runDialogue: {fileID: 222302247}
-  characters:
-  - {fileID: 183086361}
-  - {fileID: 1015940286}
-  - {fileID: 17401091}
-  - {fileID: 0}
+  characters: []
   roundTracker: 000000
   main_camera: {fileID: 519420031}
 --- !u!4 &1274001356
@@ -3363,6 +3349,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7060924264942568004, guid: f0ab48fa476bfea4ab981564e894b54e, type: 3}
+      propertyPath: _clicked.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7060924264942568004, guid: f0ab48fa476bfea4ab981564e894b54e, type: 3}
       propertyPath: _clicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1274001355}
@@ -3370,6 +3360,10 @@ PrefabInstance:
       propertyPath: _clicked.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1274001355}
+    - target: {fileID: 7060924264942568004, guid: f0ab48fa476bfea4ab981564e894b54e, type: 3}
+      propertyPath: _clicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Character1Clicked
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
