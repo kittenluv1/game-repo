@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 78a5bb2a4f7044062a1ce3a3afd681ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1602654399345188100
+    second: cheesequeen-Sheet_0
+  - first:
+      213: 4368378951735202834
+    second: cheesequeen-Sheet_1
+  - first:
+      213: -3878032099520202030
+    second: cheesequeen-Sheet_2
+  - first:
+      213: -2346040309090283324
+    second: cheesequeen-Sheet_3
+  - first:
+      213: 7386648073250992132
+    second: cheesequeen-Sheet_4
+  - first:
+      213: 2601551672976393816
+    second: cheesequeen-Sheet_5
+  - first:
+      213: -6535425378359875784
+    second: cheesequeen-Sheet_6
+  - first:
+      213: 9018042408467669997
+    second: cheesequeen-Sheet_7
+  - first:
+      213: 8140196091970511413
+    second: cheesequeen-Sheet_8
+  - first:
+      213: -6680289813405462508
+    second: cheesequeen-Sheet_9
+  - first:
+      213: -6008946484333700000
+    second: cheesequeen-Sheet_10
+  - first:
+      213: -6478083424788395158
+    second: cheesequeen-Sheet_11
+  - first:
+      213: 4012566759163847925
+    second: cheesequeen-Sheet_12
+  - first:
+      213: -5169586393722581546
+    second: cheesequeen-Sheet_13
+  - first:
+      213: -4986025687834488197
+    second: cheesequeen-Sheet_14
+  - first:
+      213: 1409388373218171093
+    second: cheesequeen-Sheet_15
+  - first:
+      213: 3909788828722909894
+    second: cheesequeen-Sheet_16
+  - first:
+      213: -682313390862416134
+    second: cheesequeen-Sheet_17
+  - first:
+      213: -4412878101000861769
+    second: cheesequeen-Sheet_18
+  - first:
+      213: 82763212451585973
+    second: cheesequeen-Sheet_19
+  - first:
+      213: 6979390038231392450
+    second: cheesequeen-Sheet_20
+  - first:
+      213: -5659679425028004835
+    second: cheesequeen-Sheet_21
+  - first:
+      213: 2144630875357458558
+    second: cheesequeen-Sheet_22
+  - first:
+      213: 4779664004727541723
+    second: cheesequeen-Sheet_23
+  - first:
+      213: 7043384885776628926
+    second: cheesequeen-Sheet_24
+  - first:
+      213: 7580127432863934712
+    second: cheesequeen-Sheet_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1031
+        width: 163
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ddfaa5fa5cd3610800000000000000
+      internalID: 1602654399345188100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 971
+        width: 28
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214587e03899f9c30800000000000000
+      internalID: 4368378951735202834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1051
+        width: 162
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da39882a567e2ac0800000000000000
+      internalID: -3878032099520202030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1057
+        width: 154
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c01debc4c0317fd0800000000000000
+      internalID: -2346040309090283324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1044
+        width: 154
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400f2f65945a28660800000000000000
+      internalID: 7386648073250992132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1027
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856c49486719a1420800000000000000
+      internalID: 2601551672976393816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 971
+        width: 33
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83769ca9e318d45a0800000000000000
+      internalID: -6535425378359875784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 753
+        width: 153
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3af167ac5862d70800000000000000
+      internalID: 9018042408467669997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 754
+        width: 153
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532ecef8739c7f070800000000000000
+      internalID: 8140196091970511413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 756
+        width: 152
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4109e43fec7da43a0800000000000000
+      internalID: -6680289813405462508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 755
+        width: 159
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c15fe520feb9ca0800000000000000
+      internalID: -6008946484333700000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 430
+        width: 172
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b442092793916a0800000000000000
+      internalID: -6478083424788395158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 408
+        width: 174
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4608d35308fa730800000000000000
+      internalID: 4012566759163847925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 389
+        width: 175
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd09768090f148b0800000000000000
+      internalID: -5169586393722581546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 383
+        width: 162
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7217a3dd041ecab0800000000000000
+      internalID: -4986025687834488197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 323
+        width: 28
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d81c3812472f8310800000000000000
+      internalID: 1409388373218171093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 379
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2d1da893c524630800000000000000
+      internalID: 3909788828722909894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 323
+        width: 33
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af64728069fe786f0800000000000000
+      internalID: -682313390862416134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 59
+        width: 162
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b74eb06fbe42c2c0800000000000000
+      internalID: -4412878101000861769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 28
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf95a604b8062100800000000000000
+      internalID: 82763212451585973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 55
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0aea9e246cbd060800000000000000
+      internalID: 6979390038231392450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 0
+        width: 33
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d146e989c87c471b0800000000000000
+      internalID: -5659679425028004835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 59
+        width: 162
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70340c1b6243cd10800000000000000
+      internalID: 2144630875357458558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 0
+        width: 28
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf818ba617c45240800000000000000
+      internalID: 4779664004727541723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 55
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc32157c312fb160800000000000000
+      internalID: 7043384885776628926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cheesequeen-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 0
+        width: 33
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f86c0c2db5023960800000000000000
+      internalID: 7580127432863934712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
