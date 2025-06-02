@@ -35,16 +35,16 @@ public class Character1Script : MonoBehaviour
         {
             isCharacter1Done = true;
         }
-        else if (inputString == "starboy" || inputString == "starboy2" || inputString == "starboy3" || inputString == "starboy4")
+        else if (inputString == "starboy1" || inputString == "starboy2" || inputString == "starboy3" || inputString == "starboy4")
         {
             isCharacter2Done = true;
         }
-        else if (inputString == "luci" || inputString == "luci2" || inputString == "luci3" || inputString == "luci4")
+        else if (inputString == "luci1" || inputString == "luci2" || inputString == "luci3" || inputString == "luci4")
         {
             isCharacter3Done = true;
 
         }
-        else if (inputString == "cheesequeen" || inputString == "cheesequeen2" || inputString == "cheesequeen3" || inputString == "cheesequeen4")
+        else if (inputString == "cheesequeen1" || inputString == "cheesequeen2" || inputString == "cheesequeen3" || inputString == "cheesequeen4")
         {
             isCharacter4Done = true;
         }
