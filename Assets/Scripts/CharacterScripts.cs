@@ -82,7 +82,10 @@ public class Character1Script : MonoBehaviour
             if (currentCharacter == character)
             {
                 character.SetActive(true);
-                runDialogue.StartDialogue(currentCharacter.name);
+                // Instead of just currentCharacter.name, use scene-character naming convention
+                string sceneNumber = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+                string dialogueName = currentCharacter.name + sceneNumber;
+                runDialogue.StartDialogue(dialogueName);
             }
             else
             {

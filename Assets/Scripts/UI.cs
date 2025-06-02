@@ -24,21 +24,21 @@ public class PanelManager : MonoBehaviour
 
     public void PlayGame1()
     {
-        SceneManager.LoadSceneAsync("TestCase");
+        SceneManager.LoadSceneAsync("1");
     }
 
     public void PlayGame2()
     {
-        SceneManager.LoadSceneAsync("TestCase");
+        SceneManager.LoadSceneAsync("2");
     }
 
     public void PlayGame3()
     {
-        SceneManager.LoadSceneAsync("TestCase");
+        SceneManager.LoadSceneAsync("3");
     }
     public void PlayGame4()
     {
-        SceneManager.LoadSceneAsync("TestCase");
+        SceneManager.LoadSceneAsync("4");
     }
 
     public void QuitGame()
