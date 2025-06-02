@@ -31,23 +31,22 @@ public class Character1Script : MonoBehaviour
     public void isADialogueDone(string inputString)
     {
 
-        if (inputString == "thomas")
+        if (inputString == "thomas1" || inputString == "thomas2" || inputString == "thomas3" || inputString == "thomas4")
         {
             isCharacter1Done = true;
         }
-        else if (inputString == "starboy")
+        else if (inputString == "starboy" || inputString == "starboy2" || inputString == "starboy3" || inputString == "starboy4")
         {
             isCharacter2Done = true;
         }
-        else if (inputString == "luci")
+        else if (inputString == "luci" || inputString == "luci2" || inputString == "luci3" || inputString == "luci4")
         {
             isCharacter3Done = true;
 
         }
-        else if (inputString == "cheesequeen")
+        else if (inputString == "cheesequeen" || inputString == "cheesequeen2" || inputString == "cheesequeen3" || inputString == "cheesequeen4")
         {
             isCharacter4Done = true;
-
         }
     }
 
