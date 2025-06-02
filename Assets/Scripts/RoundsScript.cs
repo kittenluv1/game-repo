@@ -30,11 +30,8 @@ public class RoundsScript : MonoBehaviour
     void Awake()
     {
         dialogueRunner.onDialogueComplete.AddListener(onDialogueCompleteListener);
-    }
 
-    void Start()
-    {
-        // cutscene
+         // cutscene
         beginningCutscene.loopPointReached += (VideoPlayer vp) =>
         {
             beginningCutscene.Stop();
@@ -47,6 +44,10 @@ public class RoundsScript : MonoBehaviour
             beginningCutscene.Play();
         };
         beginningCutscene.Prepare();
+    }
+
+    void Start()
+    {
 
         // update toggle values
         GameObject[] characters = characterScripts.characters.ToArray();
