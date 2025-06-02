@@ -129,7 +129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 495317719064432362, guid: 32fb3422f75ca447383ee85fcd7309d4, type: 3}
       propertyPath: m_Name
-      value: Character4
+      value: cheesequeen
       objectReference: {fileID: 0}
     - target: {fileID: 4160256908369644665, guid: 32fb3422f75ca447383ee85fcd7309d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3436,7 +3436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291493748583703575, guid: f0ab48fa476bfea4ab981564e894b54e, type: 3}
       propertyPath: m_Name
-      value: Character1
+      value: thomas
       objectReference: {fileID: 0}
     - target: {fileID: 7060924264942568004, guid: f0ab48fa476bfea4ab981564e894b54e, type: 3}
       propertyPath: _clicked.m_PersistentCalls.m_Calls.Array.size
@@ -3473,7 +3473,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3262438603626763704, guid: 654d34cb7d8bf7a489df908b5f4f7bef, type: 3}
       propertyPath: m_Name
-      value: Character3
+      value: luci
       objectReference: {fileID: 0}
     - target: {fileID: 5693152016953809504, guid: 654d34cb7d8bf7a489df908b5f4f7bef, type: 3}
       propertyPath: m_LocalScale.x
@@ -3554,7 +3554,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 495317719064432362, guid: 38291925d01c4be48b34bca7d2b9604e, type: 3}
       propertyPath: m_Name
-      value: Character2
+      value: starboy
       objectReference: {fileID: 0}
     - target: {fileID: 4160256908369644665, guid: 38291925d01c4be48b34bca7d2b9604e, type: 3}
       propertyPath: m_LocalPosition.x

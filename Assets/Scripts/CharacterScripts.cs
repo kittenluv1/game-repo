@@ -31,20 +31,20 @@ public class Character1Script : MonoBehaviour
     public void isADialogueDone(string inputString)
     {
 
-        if (inputString == "Character1")
+        if (inputString == "thomas")
         {
             isCharacter1Done = true;
         }
-        else if (inputString == "Character2")
+        else if (inputString == "starboy")
         {
             isCharacter2Done = true;
         }
-        else if (inputString == "Character3")
+        else if (inputString == "luci")
         {
             isCharacter3Done = true;
 
         }
-        else if (inputString == "Character4")
+        else if (inputString == "cheesequeen")
         {
             isCharacter4Done = true;
 
@@ -104,6 +104,7 @@ public class Character1Script : MonoBehaviour
 
     public void exitDialogue(GameObject currentCharacter)
     {
+        Debug.Log("Exit dialogue function is working");
 
         if (currentCharacter == characters[0] && isCharacter1Done == true)
         {
@@ -125,7 +126,7 @@ public class Character1Script : MonoBehaviour
             main_camera.orthographicSize = 5f;
             currentCharacter.transform.localScale = new Vector3(1.37f, 1.37f, 1.37f);
             currentCharacter.transform.position = new Vector3(1.12f, 0, 0);
-            currentCharacter.transform.rotation = new Quaternion(0, 0, 0,0);
+            currentCharacter.transform.rotation = new Quaternion(0, 0, 0, 0);
 
             returnCharacters();
 
@@ -195,10 +196,10 @@ public class Character1Script : MonoBehaviour
 
     public void Awake()
     {
-        characters.Add(GameObject.Find("Character1"));
-        characters.Add(GameObject.Find("Character2"));
-        characters.Add(GameObject.Find("Character3"));
-        characters.Add(GameObject.Find("Character4"));
+        characters.Add(GameObject.Find("thomas"));
+        characters.Add(GameObject.Find("starboy"));
+        characters.Add(GameObject.Find("luci"));
+        characters.Add(GameObject.Find("cheesequeen"));
 
         foreach (GameObject character in characters)
         {
