@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Character1Script : MonoBehaviour
 {
@@ -57,9 +58,24 @@ public class Character1Script : MonoBehaviour
     public void enterDialogue(GameObject currentCharacter)
     {
         currentCharacter.transform.position = new Vector3(0, 0.69f, 0);
-        currentCharacter.transform.localScale = new Vector3(2, 2, 2);
+        
         currentCharacter.transform.rotation = new Quaternion(0, 0, 0,0);
         main_camera.orthographicSize = 4.5f;
+
+        if (currentCharacter == characters[2])
+        {
+            currentCharacter.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+        }
+        else if (currentCharacter == characters[3])
+        {
+            currentCharacter.transform.localScale = new Vector3(1, 1, 1);
+
+        }
+        else
+        {
+            currentCharacter.transform.localScale = new Vector3(2, 2, 2);
+
+        }
 
         foreach (GameObject character in characters)
         {
@@ -107,8 +123,10 @@ public class Character1Script : MonoBehaviour
         else if (currentCharacter == characters[2] && isCharacter3Done == true)
         {
             main_camera.orthographicSize = 5f;
-            currentCharacter.transform.localScale = new Vector3(2, 2, 2);
-            currentCharacter.transform.position = new Vector3(1.33f, 0.73f, 0);
+            currentCharacter.transform.localScale = new Vector3(1.37f, 1.37f, 1.37f);
+            currentCharacter.transform.position = new Vector3(1.12f, 0, 0);
+            currentCharacter.transform.rotation = new Quaternion(0, 0, 0,0);
+
             returnCharacters();
 
         }
