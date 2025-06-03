@@ -290,11 +290,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78886371}
   m_CullTransparentMesh: 1
---- !u!1 &183086361 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5291493748583703575, guid: f0ab48fa476bfea4ab981564e894b54e, type: 3}
-  m_PrefabInstance: {fileID: 3235668873355716642}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &213199645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,7 +1965,7 @@ MonoBehaviour:
   suspectList: {fileID: 711329525}
   characterScripts: {fileID: 1274001355}
   continueButton: {fileID: 1187887521}
-  realSuspect: {fileID: 183086361}
+  realSuspect: {fileID: 7717553568770824120}
   winOrLoseText: {fileID: 1500563001}
   currentSuspect: {fileID: 0}
 --- !u!4 &979923948
@@ -3546,6 +3541,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 654d34cb7d8bf7a489df908b5f4f7bef, type: 3}
+--- !u!1 &7717553568770824120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3262438603626763704, guid: 654d34cb7d8bf7a489df908b5f4f7bef, type: 3}
+  m_PrefabInstance: {fileID: 7717553568770824119}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8152614156627936431
 PrefabInstance:
   m_ObjectHideFlags: 0
