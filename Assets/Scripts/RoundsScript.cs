@@ -30,20 +30,7 @@ public class RoundsScript : MonoBehaviour
     void Awake()
     {
         dialogueRunner.onDialogueComplete.AddListener(onDialogueCompleteListener);
-
-         // cutscene
-        beginningCutscene.loopPointReached += (VideoPlayer vp) =>
-        {
-            beginningCutscene.Stop();
-            rawImage.gameObject.SetActive(false);
-        };
-        beginningCutscene.prepareCompleted += (VideoPlayer vp) =>
-        {
-            rawImage.gameObject.SetActive(true);
-            rawImage.texture = beginningCutscene.texture;
-            beginningCutscene.Play();
-        };
-        beginningCutscene.Prepare();
+        playCutScene(); 
     }
 
     void Start()
@@ -103,6 +90,26 @@ public class RoundsScript : MonoBehaviour
             suspectListUI.SetActive(false);
             roundCounterUI.text = "Round: " + roundCounter.ToString();
         });
+    }
+
+    void playCutScene()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+        string cutscenePath = System.IO.Path.Combine(Application.streamingAssetsPath, sceneName + ".mp4");
+        Debug.Log("Cutscene path:" + cutscenePath); 
+        beginningCutscene.url = cutscenePath;
+        beginningCutscene.loopPointReached += (VideoPlayer vp) =>
+        {
+            beginningCutscene.Stop();
+            rawImage.gameObject.SetActive(false);
+        };
+        beginningCutscene.prepareCompleted += (VideoPlayer vp) =>
+        {
+            rawImage.gameObject.SetActive(true);
+            rawImage.texture = beginningCutscene.texture;
+            beginningCutscene.Play();
+        };
+        beginningCutscene.Prepare();
     }
 
     void onDialogueCompleteListener()
@@ -169,7 +176,6 @@ public class RoundsScript : MonoBehaviour
     IEnumerator UnloadSceneAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        // Replace "NextSceneName" with your actual next scene name
         SceneManager.LoadScene("StartScene");
     }
 }
