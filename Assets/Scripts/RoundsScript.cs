@@ -122,39 +122,6 @@ public class RoundsScript : MonoBehaviour
     {
         Debug.Log("end game called");
 
-        // cutscene - NOT WORKING AAH
-        if (beginningCutscene.isPlaying)
-            beginningCutscene.Stop();
-        endCutscene.loopPointReached += (VideoPlayer vp) =>
-        {
-            endCutscene.Stop();
-            rawImage.gameObject.SetActive(false);
-            Scene currentScene = SceneManager.GetActiveScene();
-            SceneManager.UnloadSceneAsync(currentScene.name);
-        };
-        endCutscene.prepareCompleted += (VideoPlayer vp) =>
-        {
-            Debug.Log("preparing end cutscene");
-            rawImage.gameObject.SetActive(true);
-            rawImage.texture = endCutscene.texture;
-            Debug.Log("play end cutscene");
-            endCutscene.Play();
-        };
-        Debug.Log("Preparing to play end cutscene");
-        if (endCutscene == null)
-        {
-            Debug.LogError("endCutscene VideoPlayer is not assigned!");
-            return;
-        }
-        if (endCutscene.clip == null && string.IsNullOrEmpty(endCutscene.url))
-        {
-            Debug.LogError("endCutscene has no video clip or URL assigned!");
-            return;
-        }
-        Debug.Log("Calling endCutscene.Prepare()");
-        endCutscene.Prepare();
-
-
         if (currentSuspect == realSuspect)
         {
             Debug.Log("You chose: " + currentSuspect.name + "\nYou win!");
