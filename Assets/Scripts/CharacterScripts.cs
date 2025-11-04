@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using System.Runtime.InteropServices;
 
 public class Character1Script : MonoBehaviour
 {
@@ -14,7 +15,6 @@ public class Character1Script : MonoBehaviour
 
     public List<GameObject> characters;
 
-
     List<bool> roundCounter = new List<bool>();
 
     // Below four booleans are for keeping track of when each dialogue is done 
@@ -22,6 +22,7 @@ public class Character1Script : MonoBehaviour
     bool isCharacter2Done = false;
     bool isCharacter3Done = false;
     bool isCharacter4Done = false;
+    public bool[4] characterlist = {isCharacter1Done, isCharacter2Done, isCharacter3Done, isCharacter4Done};
 
     public bool[] roundTracker = { true, false };
     public Camera main_camera;
@@ -92,8 +93,6 @@ public class Character1Script : MonoBehaviour
             }
 
         }
-
-
     }
     public void returnCharacters()
     {
@@ -162,29 +161,15 @@ public class Character1Script : MonoBehaviour
     }
     public void Character1Clicked(GameObject clickedCharacter)
     {
-
         bool currentStateOfGame = isGameOver(clickedCharacter);
         if (currentStateOfGame == false)
         {
-            if (clickedCharacter == characters[0] && isCharacter1Done == false)
+            for (character = 0; character <= 4; character++)
             {
-                enterDialogue(clickedCharacter);
-            }
-            else if (clickedCharacter == characters[1] && isCharacter2Done == false)
-            {
-                enterDialogue(clickedCharacter);
-            }
-            else if (clickedCharacter == characters[2] && isCharacter3Done == false)
-            {
-                enterDialogue(clickedCharacter);
-            }
-            else if (clickedCharacter == characters[3] && isCharacter4Done == false)
-            {
-                enterDialogue(clickedCharacter);
-            }
-            else
-            {
-                exitDialogue(clickedCharacter);
+                if (clickedCharacter == characters[character] && characterlist[character] == false)
+                {
+                    enterDialogue(clickedCharacter);
+                }
             }
         }
         else
